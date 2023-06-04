@@ -11,6 +11,11 @@
 		DB8151FA2A2B169F0080C17B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8151F92A2B169F0080C17B /* ContentView.swift */; };
 		DB8151FC2A2B16A20080C17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB8151FB2A2B16A20080C17B /* Assets.xcassets */; };
 		DB8151FF2A2B16A20080C17B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB8151FE2A2B16A20080C17B /* Preview Assets.xcassets */; };
+		DB8152092A2B277C0080C17B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8152082A2B277C0080C17B /* LocationManager.swift */; };
+		DB81520C2A2B27AF0080C17B /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81520B2A2B27AF0080C17B /* RemoteImage.swift */; };
+		DB81520E2A2B27DB0080C17B /* YelpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81520D2A2B27DB0080C17B /* YelpResponse.swift */; };
+		DB8152102A2B2AD80080C17B /* RestaurantCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81520F2A2B2AD80080C17B /* RestaurantCardView.swift */; };
+		DB8152122A2B2B160080C17B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8152112A2B2B160080C17B /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		DB8151F92A2B169F0080C17B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB8151FB2A2B16A20080C17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB8151FE2A2B16A20080C17B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB8152082A2B277C0080C17B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		DB81520B2A2B27AF0080C17B /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		DB81520D2A2B27DB0080C17B /* YelpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpResponse.swift; sourceTree = "<group>"; };
+		DB81520F2A2B2AD80080C17B /* RestaurantCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCardView.swift; sourceTree = "<group>"; };
+		DB8152112A2B2B160080C17B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,8 @@
 		DB8151F62A2B169F0080C17B /* TrackingRestaurant */ = {
 			isa = PBXGroup;
 			children = (
+				DB81520A2A2B279A0080C17B /* View */,
+				DB8152052A2B199E0080C17B /* Model */,
 				DB8151F72A2B169F0080C17B /* TrackingRestaurantApp.swift */,
 				DB8151F92A2B169F0080C17B /* ContentView.swift */,
 				DB8151FB2A2B16A20080C17B /* Assets.xcassets */,
@@ -65,6 +77,25 @@
 				DB8151FE2A2B16A20080C17B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB8152052A2B199E0080C17B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB8152082A2B277C0080C17B /* LocationManager.swift */,
+				DB81520D2A2B27DB0080C17B /* YelpResponse.swift */,
+				DB8152112A2B2B160080C17B /* Restaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB81520A2A2B279A0080C17B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB81520B2A2B27AF0080C17B /* RemoteImage.swift */,
+				DB81520F2A2B2AD80080C17B /* RestaurantCardView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB81520E2A2B27DB0080C17B /* YelpResponse.swift in Sources */,
+				DB8152092A2B277C0080C17B /* LocationManager.swift in Sources */,
 				DB8151FA2A2B169F0080C17B /* ContentView.swift in Sources */,
+				DB8152122A2B2B160080C17B /* Restaurant.swift in Sources */,
 				DB8151F82A2B169F0080C17B /* TrackingRestaurantApp.swift in Sources */,
+				DB81520C2A2B27AF0080C17B /* RemoteImage.swift in Sources */,
+				DB8152102A2B2AD80080C17B /* RestaurantCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +306,8 @@
 				DEVELOPMENT_TEAM = 546UB6K93J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = Tracking;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Tr;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +337,8 @@
 				DEVELOPMENT_TEAM = 546UB6K93J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = Tracking;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Tr;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
